@@ -19,7 +19,7 @@
     "prebuild": "npm install",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages build",
+    "deploy": "gh-pages -d build",
     "pretest": "npm install",
     "test": "rm -rf ./unit.xml; CI=true TEST_REPORT_FILENAME=./unit.xml ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter"
   },
